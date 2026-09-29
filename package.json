@@ -1,0 +1,21 @@
+{
+  "name": "tnpsc-vetri-pathai-portal",
+  "version": "1.0.0",
+  "description": "TNPSC Group IV & VAO Coaching and PYQ CBT Simulation Portal",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve .",
+    "start": "npx serve .",
+    "deploy": "npx vercel --prod"
+  },
+  "keywords": [
+    "tnpsc",
+    "group-4",
+    "vao",
+    "tamil-nadu",
+    "cbt",
+    "omr"
+  ],
+  "author": "TNPSC Vetri Pathai Academy",
+  "license": "MIT"
+}

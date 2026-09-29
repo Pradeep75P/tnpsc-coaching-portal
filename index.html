@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="ta" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TNPSC Vetri Pathai | TNPSC Group 4 Coaching & Previous Year Question Papers (PYQ)</title>
+  <meta name="description"
+    content="Premier TNPSC Group IV & VAO coaching portal. Access 10+ years of previous year question papers with bilingual solutions, free CBT mock tests, Samacheer Kalvi notes, and cut-off calculator.">
+  <meta name="keywords"
+    content="TNPSC Group 4 question paper, TNPSC VAO previous year questions, TNPSC coaching online, Samacheer kalvi notes, TNPSC Group 4 mock test, TNPSC cutoff 2024">
+
+  <!-- CSS Stylesheet -->l
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-announcement">
+    <div class="ticker-content">
+      <span class="live-badge">ALERT</span>
+      <span>📢 TNPSC Group 4 2026 Notification Expected Soon | 2024 Final Answer Key & Cut-off Analysis Available | Free
+        Daily Mock Tests Active!</span>
+    </div>
+    <div class="top-contact">
+      <a href="tel:+919876543210">📞 +91 98765 43210</a>
+      <span>|</span>
+      <a href="mailto:support@tnpscvetripathai.com">✉️ info@vetripathai.tn</a>
+    </div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="brand">
+        <div class="brand-emblem">🏆</div>
+        <div class="brand-info">
+          <h1 data-i18n="brandName">டி.என்.பி.எஸ்.சி வெற்றிப் பாதை</h1>
+          <span data-i18n="brandSubtitle">குரூப் IV & வி.ஏ.ஓ முதல்நிலை அரசுத் தேர்வுப் பயிற்சி மையம்</span>
+        </div>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active" data-i18n="navHome">முகப்பு</a></li>
+        <li><a href="#pyq-section" class="nav-link" data-i18n="navPyq">வினாத்தாள்கள்</a></li>
+        <li><a href="#pattern-section" class="nav-link" data-i18n="navPattern">தேர்வு முறை</a></li>
+        <li><a href="#calculator-section" class="nav-link" data-i18n="navCutoff">கட்-ஆப் கணிப்பான்</a></li>
+        <li><a href="#materials-section" class="nav-link" data-i18n="navMaterials">பாடக் குறிப்புகள்</a></li>
+        <li><a href="#batches-section" class="nav-link" data-i18n="navBatches">பயிற்சி வகுப்புகள்</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- Language Switcher -->
+        <div class="lang-switch">
+          <button class="lang-btn active" id="langTaBtn">தமிழ்</button>
+          <button class="lang-btn" id="langEnBtn">EN</button>
+        </div>
+
+        <!-- Theme Toggle -->
+        <button class="btn-icon-toggle" id="themeToggleBtn" title="Toggle Theme" aria-label="Toggle theme">
+          🌙
+        </button>
+
+        <!-- Admission CTA -->
+        <button class="btn-primary-sm" onclick="openEnrollModal('batch-target')" data-i18n="btnFreeTrial">
+          இலவச வகுப்பில் சேர
+        </button>
+
+        <button class="mobile-toggle" onclick="toggleMobileMenu()" aria-label="Toggle mobile menu">
+          ☰
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero" id="home">
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-tag">
+          <span>🏛️</span>
+          <span data-i18n="heroBadge">டி.என்.பி.எஸ்.சி குரூப் IV & VAO 2026-27 சாதனையாளர் தளம்</span>
+        </div>
+
+        <h2 class="hero-title">
+          <span data-i18n="heroTitlePrefix">முதல் முயற்சியிலேயே</span><br>
+          <span class="gradient-text" data-i18n="heroTitleAccent">டி.என்.பி.எஸ்.சி குரூப் 4 & VAO</span><br>
+          <span data-i18n="heroTitleSuffix">தேர்வில் வெற்றி பெறுக!</span>
+        </h2>
+
+        <p class="hero-desc" data-i18n="heroDesc">
+          கடந்த 10 ஆண்டுகளின் அதிகாரப்பூர்வ வினாத்தாள்கள், விரிவான தமிழ்-ஆங்கில விளக்கங்கள், ஆன்லைன் CBT மாதிரித்
+          தேர்வுகள், சமச்சீர் கல்வி பாடக் குறிப்புகள் மற்றும் முழுமையான வழிகாட்டுதல்.
+        </p>
+
+        <div class="hero-cta-group">
+          <button class="btn btn-primary" onclick="launchCbtModal('tnpsc-g4-2024')">
+            <span>📝</span>
+            <span data-i18n="btnStartMock">2024 வினாத்தாள் ஆன்லைன் தேர்வு</span>
+          </button>
+          <a href="#pyq-section" class="btn btn-secondary">
+            <span>📚</span>
+            <span data-i18n="btnExplorePyq">அனைத்து வினாத்தாள்கள்</span>
+          </a>
+          <a href="#pattern-section" class="btn btn-gold">
+            <span>📜</span>
+            <span data-i18n="btnDownloadSyllabus">பாடத்திட்டம் பதிவிறக்குக</span>
+          </a>
+        </div>
+
+        <div class="hero-stats-row">
+          <div class="hero-stat-card">
+            <span class="hero-stat-num">25,000+</span>
+            <span class="hero-stat-label" data-i18n="statStudents">மாணவர்கள்</span>
+          </div>
+          <div class="hero-stat-card">
+            <span class="hero-stat-num">1,450+</span>
+            <span class="hero-stat-label" data-i18n="statSuccess">தேர்ச்சி பெற்றோர்</span>
+          </div>
+          <div class="hero-stat-card">
+            <span class="hero-stat-num">150+</span>
+            <span class="hero-stat-label" data-i18n="statTests">மாதிரித் தேர்வுகள்</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-banner-card">
+          <img src="assets/hero.jpg" alt="TNPSC Academy Coaching Banner" width="600" height="340">
+          <div class="hero-overlay-badge">
+            <div class="overlay-info">
+              <h4>2024 Official Group IV Paper Added</h4>
+              <p>200 Questions with bilingual answer keys & explanations</p>
+            </div>
+            <button class="btn-primary-sm" onclick="launchCbtModal('tnpsc-g4-2024')">
+              Try Test
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================
+       PREVIOUS YEAR QUESTION PAPERS (PYQ) SECTION
+       ========================================================== -->
+  <section class="section" id="pyq-section">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-badge">Previous Year Question Papers</span>
+        <h2 class="section-title" data-i18n="pyqSectionTitle">டி.என்.பி.எஸ்.சி குரூப் IV முந்தைய ஆண்டு வினாத்தாள்கள்
+        </h2>
+        <p class="section-subtitle" data-i18n="pyqSectionSubtitle">
+          அசல் வினாத்தாள்கள், இறுதி விடைக் குறிப்புகள் பதிவிறக்கம் மற்றும் நிகழ்நேர கணினி வழி ஆன்லைன் மாதிரித் தேர்வு.
+        </p>
+      </div>
+
+      <!-- Filter Tabs and Search Bar -->
+      <div class="filter-bar">
+        <div class="filter-tabs">
+          <button class="filter-tab active" data-year="all" data-i18n="filterAll">அனைத்து ஆண்டுகள்</button>
+          <button class="filter-tab" data-year="2024">2024 (Latest)</button>
+          <button class="filter-tab" data-year="2022">2022</button>
+          <button class="filter-tab" data-year="2019">2019</button>
+          <button class="filter-tab" data-year="2018">2018</button>
+          <button class="filter-tab" data-year="2016">2016</button>
+          <button class="filter-tab" data-year="2014">2014</button>
+        </div>
+
+        <div class="search-box">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="pyqSearchInput" class="search-input" placeholder="வினாத்தாள்கள், பாடங்கள் தேடுக..."
+            data-i18n-attr="placeholder:searchPlaceholder">
+        </div>
+      </div>
+
+      <!-- Cards Grid (Dynamically Populated from pyqData.js) -->
+      <div class="pyq-grid" id="pyqGridContainer">
+        <!-- Rendered via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       EXAM PATTERN & SYLLABUS SECTION
+       ========================================================== -->
+  <section class="section section-alt" id="pattern-section">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-badge">Exam Scheme & Syllabus</span>
+        <h2 class="section-title" data-i18n="examPatternTitle">தேர்வு திட்டம் & மதிப்பெண் பங்கீடு</h2>
+        <p class="section-subtitle" data-i18n="examPatternSubtitle">
+          பத்தாம் வகுப்புத் தரம் கொண்ட 200 கொள்குறி வினாக்கள் (300 மதிப்பெண்கள், 3 மணி நேரம்).
+        </p>
+      </div>
+
+      <div class="pattern-table-wrap">
+        <table class="pattern-table">
+          <thead>
+            <tr>
+              <th>பகுதி (Part)</th>
+              <th>பாடத்தின் பெயர் (Subject Name)</th>
+              <th>வினாக்கள் (Questions)</th>
+              <th>மதிப்பெண்கள் (Marks)</th>
+              <th>தரம் (Standard)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>பகுதி - 'அ' (Part A)</strong></td>
+              <td>பொதுத் தமிழ் (General Tamil) - தமிழ் தகுதி மற்றும் மதிப்பீட்டுத் தேர்வு (இலக்கணம், இலக்கியம், தமிழ்
+                அறிஞர்கள்)</td>
+              <td><strong>100</strong></td>
+              <td><strong>150</strong></td>
+              <td>SSLC (10-ஆம் வகுப்பு)</td>
+            </tr>
+            <tr>
+              <td><strong>பகுதி - 'ஆ' (Part B)</strong></td>
+              <td>பொது அறிவு (General Studies) - வரலாறு, அரசியலமைப்பு, புவியியல், அறிவியல், பொருளாதாரம் & நடப்பு
+                நிகழ்வுகள்</td>
+              <td><strong>75</strong></td>
+              <td><strong>112.5</strong></td>
+              <td>SSLC (10-ஆம் வகுப்பு)</td>
+            </tr>
+            <tr>
+              <td><strong>பகுதி - 'இ' (Part C)</strong></td>
+              <td>திறனறிவும் மனக்கணக்கு நுண்ணறிவும் (Aptitude & Mental Ability Tests)</td>
+              <td><strong>25</strong></td>
+              <td><strong>37.5</strong></td>
+              <td>SSLC (10-ஆம் வகுப்பு)</td>
+            </tr>
+            <tr style="background: var(--primary-subtle); font-weight: 800;">
+              <td>மொத்தம் (Total)</td>
+              <td>முழுத் தேர்வு (Single Paper - 3 Hours / 180 Minutes)</td>
+              <td>200 வினாக்கள்</td>
+              <td>300 மதிப்பெண்கள்</td>
+              <td>குறைந்தபட்ச தகுதி: 90 மதிப்பெண்கள்</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+        <div
+          style="background: var(--bg-card); padding: 22px; border-radius: var(--radius-md); border-left: 4px solid var(--primary);">
+          <h4 style="margin-bottom: 8px;">📖 பகுதி - அ: பொதுத் தமிழ்</h4>
+          <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.6;">
+            100 வினாக்களில் 95+ எடுப்பதே வெற்றிக்கு முக்கியமாகும். 6 முதல் 10-ஆம் வகுப்பு வரை உள்ள புதிய சமச்சீர்
+            பாடப்புத்தகங்களில் செய்யுள், உரைநடை மற்றும் இலக்கணப் பகுதிகளை முழுமையாகப் படிக்கவும்.
+          </p>
+        </div>
+        <div
+          style="background: var(--bg-card); padding: 22px; border-radius: var(--radius-md); border-left: 4px solid var(--accent-gold);">
+          <h4 style="margin-bottom: 8px;">🧠 பகுதி - இ: கணிதம் (Aptitude)</h4>
+          <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.6;">
+            25-க்கு 25 மதிப்பெண் பெறுவது எளிது. மீ.சி.ம, மீ.பொ.வ, சதவிகிதம், சுருக்குக, தனிவட்டி, கூட்டுவட்டி மற்றும்
+            பரப்பளவு தலைப்புகளில் தினமும் 1 மணி நேரம் பயிற்சி செய்யவும்.
+          </p>
+        </div>
+        <div
+          style="background: var(--bg-card); padding: 22px; border-radius: var(--radius-md); border-left: 4px solid var(--emerald);">
+          <h4 style="margin-bottom: 8px;">🏛️ பகுதி - ஆ: பொது அறிவு (GS)</h4>
+          <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.6;">
+            யூனிட் 8 (தமிழ்நாடு வரலாறு, பண்பாடு & திருக்குறள்) மற்றும் யூனிட் 9 (தமிழக வளர்ச்சி நிர்வாகம்)
+            ஆகியவற்றிலிருந்து அதிக வினாக்கள் கேட்கப்படுகின்றன.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       CUT-OFF & SELECTION PROBABILITY CALCULATOR
+       ========================================================== -->
+  <section class="section" id="calculator-section">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-badge">Cut-Off Predictor</span>
+        <h2 class="section-title" data-i18n="calcTitle">குரூப் IV கட்-ஆப் மதிப்பெண் கணிப்பான்</h2>
+        <p class="section-subtitle" data-i18n="calcSubtitle">
+          இடஒதுக்கீட்டுப் பிரிவு, தமிழ் வழிக் கல்வி (PSTM) மற்றும் காலியிடங்கள் அடிப்படையிலான துல்லியக் கணிப்பு.
+        </p>
+      </div>
+
+      <div class="calculator-card">
+        <div class="calc-inputs">
+          <div class="form-group">
+            <label class="form-label" for="calcCommunity">உங்கள் சமூகப் பிரிவு (Community Category):</label>
+            <select id="calcCommunity" class="form-select">
+              <option value="GT">General Turn (GT / OC)</option>
+              <option value="BC" selected>Backward Class (BC)</option>
+              <option value="BCM">BC Muslim (BCM)</option>
+              <option value="MBC">Most Backward Class (MBC / DNC)</option>
+              <option value="SC">Scheduled Caste (SC)</option>
+              <option value="SCA">Scheduled Caste Arunthathiyar (SCA)</option>
+              <option value="ST">Scheduled Tribe (ST)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="calcRawScore">உங்கள் சரியான விடைகளின் எண்ணிக்கை (Correct Questions out of
+              200):</label>
+            <input type="number" id="calcRawScore" class="form-input" min="50" max="200" value="165"
+              placeholder="எ.கா: 165">
+          </div>
+
+          <div class="form-group checkbox-toggle-group">
+            <label class="custom-checkbox">
+              <input type="checkbox" id="calcPstm">
+              <span>தமிழ் வழிக் கல்வி பயின்றவர் (PSTM Certificate Available - 20% Reservation)</span>
+            </label>
+            <label class="custom-checkbox">
+              <input type="checkbox" id="calcTyping">
+              <span>தட்டச்சர் தகுதி பெற்றவர் (Typist / Steno-Typist Certificate)</span>
+            </label>
+            <label class="custom-checkbox">
+              <input type="checkbox" id="calcFemale">
+              <span>பெண் விண்ணப்பதாரர் (Women 30% Horizontal Reservation)</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="calc-result-panel">
+          <div class="gauge-circle">
+            <span class="gauge-score" id="calcGaugeScore">165 Qs</span>
+            <span class="gauge-label">மதிப்பெண்</span>
+          </div>
+
+          <div id="calcStatusBadge" class="calc-status-badge high">
+            🎉 High Probability of Selection
+          </div>
+
+          <p id="calcAdviceMsg" style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.6;">
+            உங்கள் மதிப்பெண் கிராம நிர்வாக அலுவலர் (VAO) மற்றும் இளநிலை உதவியாளர் (Junior Assistant) பணிகளுக்குத்
+            தேர்ந்தெடுக்கப்பட அதிக வாய்ப்புள்ளது!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       STUDY MATERIALS REPOSITORY SECTION
+       ========================================================== -->
+  <section class="section section-alt" id="materials-section">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-badge">Free Study Materials</span>
+        <h2 class="section-title" data-i18n="materialsTitle">சமச்சீர் கல்வி இலவசப் பாடக் குறிப்புகள்</h2>
+        <p class="section-subtitle" data-i18n="materialsSubtitle">
+          6 முதல் 12-ஆம் வகுப்பு வரையிலான சமச்சீர் புத்தகங்களிலிருந்து தொகுக்கப்பட்ட முக்கியக் குறிப்புகள்.
+        </p>
+      </div>
+
+      <div class="material-grid" id="materialsGridContainer">
+        <!-- Rendered via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       COACHING BATCHES & COURSES
+       ========================================================== -->
+  <section class="section" id="batches-section">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-badge">Classroom & Online Programs</span>
+        <h2 class="section-title" data-i18n="batchesTitle">நேரடி & இணையவழி பயிற்சி வகுப்புகள்</h2>
+        <p class="section-subtitle" data-i18n="batchesSubtitle">
+          அரசுப் பணியில் உள்ள வெற்றியாளர்கள் மற்றும் தலைசிறந்த ஆசிரியர்களின் நேரடி வழிகாட்டுதல்.
+        </p>
+      </div>
+
+      <div class="batches-grid" id="batchesGridContainer">
+        <!-- Rendered via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       TOPPERS WALL & TESTIMONIALS
+       ========================================================== -->
+  <section class="section section-alt">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-badge">Hall of Fame</span>
+        <h2 class="section-title">வெற்றிச் சுடர் - முந்தைய சாதனையாளர்கள்</h2>
+        <p class="section-subtitle">நமது பயிற்சி மையத்தில் பயின்று அரசு அலுவலர்களாகப் பணியாற்றும் வெற்றியாளர்களின்
+          கருத்துக்கள்.</p>
+      </div>
+
+      <div class="toppers-grid">
+        <div class="topper-card">
+          <div class="topper-avatar">K</div>
+          <h3 class="topper-name">கார்த்திகேயன் M.</h3>
+          <div class="topper-rank">State Rank 14 (Group 4 - 2024)</div>
+          <div class="topper-post">Village Administrative Officer (VAO), Salem</div>
+          <p class="topper-quote">"வெற்றிப் பாதையின் 2014-2024 முந்தைய ஆண்டு வினாத்தாள் ஆன்லைன் தேர்வுகள் தான் எனது
+            வேகத்தையும் துல்லியத்தையும் உயர்த்தியது. தமிழ் பகுதியில் 98 வினாக்கள் சரியாக விடையளிக்க முடிந்தது!"</p>
+        </div>
+
+        <div class="topper-card">
+          <div class="topper-avatar">S</div>
+          <h3 class="topper-name">சங்கீதா R.</h3>
+          <div class="topper-rank">State Rank 28 (Group 4 - 2022)</div>
+          <div class="topper-post">Junior Assistant, Commercial Taxes Dept</div>
+          <p class="topper-quote">"வீட்டிலிருந்தே படித்த எனக்கு வார இறுதிப் பயிற்சி வகுப்புகளும் சமச்சீர் கல்வி
+            கையேடுகளும் அளப்பரிய வழிகாட்டின. முதல் முயற்சியிலேயே தேர்வாகிவிட்டேன்!"</p>
+        </div>
+
+        <div class="topper-card">
+          <div class="topper-avatar">A</div>
+          <h3 class="topper-name">அருண் பிரகாஷ் V.</h3>
+          <div class="topper-rank">State Rank 42 (Group 4 - 2024)</div>
+          <div class="topper-post">Bill Collector, Madurai Corporation</div>
+          <p class="topper-quote">"கணிதத்தில் 25/25 எடுக்க உதவிய ஷார்ட்கட் வகுப்புகளுக்கு நன்றி. முந்தைய வினாத்தாள்களைத்
+            திரும்பத் திரும்ப பயிற்சி செய்ததே எனது வெற்றிக்கு ஒரே ரகசியம்."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       FOOTER
+       ========================================================== -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h3>🏆 டி.என்.பி.எஸ்.சி வெற்றிப் பாதை</h3>
+        <p class="footer-desc">
+          தமிழ்நாடு அரசுப் பணியாளர் தேர்வாணையம் நடத்தும் குரூப் IV, VAO, குரூப் II மற்றும் குரூப் I தேர்வுகளுக்கான
+          முதன்மையான பயிற்சி மற்றும் வழிகாட்டல் தளம்.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>முக்கிய இணைப்புகள்</h4>
+        <ul class="footer-links">
+          <li><a href="#pyq-section">முந்தைய ஆண்டு வினாத்தாள்கள்</a></li>
+          <li><a href="#pattern-section">பாடத்திட்டம் & தேர்வு முறை</a></li>
+          <li><a href="#calculator-section">கட்-ஆப் மதிப்பெண் கணிப்பான்</a></li>
+          <li><a href="#materials-section">இலவசப் பாடக் குறிப்புகள்</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>அதிகாரப்பூர்வ தளங்கள்</h4>
+        <ul class="footer-links">
+          <li><a href="https://www.tnpsc.gov.in" target="_blank" rel="noopener noreferrer">TNPSC அதிகாரப்பூர்வ தளம்</a>
+          </li>
+          <li><a href="https://tnpscexams.in" target="_blank" rel="noopener noreferrer">TNPSC தேர்வு முடிவுகள் & OTR</a>
+          </li>
+          <li><a href="https://tnschools.gov.in" target="_blank" rel="noopener noreferrer">சமச்சீர் பாடப்புத்தகங்கள்</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>தொடர்புக்கு</h4>
+        <ul class="footer-links">
+          <li>📍 எண் 45, அண்ணா சாலை, சென்னை - 600002</li>
+          <li>📞 உதவி எண்: +91 98765 43210</li>
+          <li>✉️ support@vetripathai.tn</li>
+          <li>⏰ காலை 9:00 - மாலை 7:00 வரை</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>© 2026 TNPSC Vetri Pathai Academy. All rights reserved.</div>
+      <div>Dedicated to Empowering Tamil Nadu Civil Service Aspirants.</div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================
+       INTERACTIVE CBT MOCK TEST MODAL
+       ========================================================== -->
+  <div class="cbt-modal-backdrop" id="cbtModalBackdrop">
+    <div class="cbt-window">
+      <!-- Modal Header -->
+      <div class="cbt-header">
+        <div class="cbt-header-left">
+          <span style="font-size: 1.5rem;">📝</span>
+          <div class="cbt-header-title">
+            <h3 id="cbtPaperTitle">TNPSC Group IV Examination</h3>
+            <span>Online CBT & Authentic OMR Sheet Simulation</span>
+          </div>
+        </div>
+
+        <!-- View Mode Switcher -->
+        <div class="cbt-view-switch">
+          <button class="view-btn active" id="btnViewCbt" onclick="setCbtViewMode('cbt')">
+            <span>💻</span>
+            <span>CBT Mode</span>
+          </button>
+          <button class="view-btn" id="btnViewSplit" onclick="setCbtViewMode('split')">
+            <span>🪟</span>
+            <span>Split (Q + OMR)</span>
+          </button>
+          <button class="view-btn" id="btnViewOmr" onclick="setCbtViewMode('omr')">
+            <span>📝</span>
+            <span>OMR Sheet</span>
+          </button>
+        </div>
+
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <button class="cbt-shortcuts-btn" id="btnShortcutsHelp" onclick="toggleShortcutsGuide()" title="CBT Keyboard Shortcuts">
+            ⌨️ Shortcuts
+          </button>
+          <div class="cbt-timer-box">
+            <span>⏱️</span>
+            <span id="cbtTimerDisplay">03:00:00</span>
+          </div>
+          <button onclick="closeCbtModal()"
+            style="background: none; border: none; color: #fff; font-size: 1.5rem; cursor: pointer;"
+            title="Close Test">✕</button>
+        </div>
+      </div>
+
+      <!-- Keyboard Shortcuts Help Drawer -->
+      <div class="cbt-shortcuts-drawer" id="cbtShortcutsDrawer" style="display: none;">
+        <div class="shortcuts-title">⌨️ விரைவு விசைப்பலகை வழிகாட்டி (Keyboard Shortcuts)</div>
+        <div class="shortcuts-grid">
+          <div class="shortcut-item"><kbd>A</kbd> / <kbd>1</kbd> <span>Option A</span></div>
+          <div class="shortcut-item"><kbd>B</kbd> / <kbd>2</kbd> <span>Option B</span></div>
+          <div class="shortcut-item"><kbd>C</kbd> / <kbd>3</kbd> <span>Option C</span></div>
+          <div class="shortcut-item"><kbd>D</kbd> / <kbd>4</kbd> <span>Option D</span></div>
+          <div class="shortcut-item"><kbd>E</kbd> / <kbd>5</kbd> <span>Option E (Unknown)</span></div>
+          <div class="shortcut-item"><kbd>→</kbd> / <kbd>N</kbd> <span>Next Question</span></div>
+          <div class="shortcut-item"><kbd>←</kbd> / <kbd>P</kbd> <span>Previous Question</span></div>
+          <div class="shortcut-item"><kbd>M</kbd> <span>Mark for Review</span></div>
+          <div class="shortcut-item"><kbd>C</kbd> <span>Clear Answer</span></div>
+        </div>
+      </div>
+
+      <!-- Section Navigation Bar & Section Timer -->
+      <div class="cbt-section-nav">
+        <div class="section-tabs" id="cbtSectionTabs">
+          <button class="sec-tab active" data-sec="all" onclick="filterCbtSection('all')">
+            <span class="sec-title">அனைத்து வினாக்கள் (All)</span>
+            <span class="sec-badge-count" id="badgeCountAll">0/15</span>
+          </button>
+          <button class="sec-tab" data-sec="tamil" onclick="filterCbtSection('tamil')">
+            <span class="sec-pill">பகுதி - அ</span>
+            <span class="sec-title">பொதுத் தமிழ் (Tamil)</span>
+            <span class="sec-badge-count" id="badgeCountTamil">0/6</span>
+          </button>
+          <button class="sec-tab" data-sec="gs" onclick="filterCbtSection('gs')">
+            <span class="sec-pill">பகுதி - ஆ</span>
+            <span class="sec-title">பொது அறிவு (GS)</span>
+            <span class="sec-badge-count" id="badgeCountGs">0/5</span>
+          </button>
+          <button class="sec-tab" data-sec="aptitude" onclick="filterCbtSection('aptitude')">
+            <span class="sec-pill">பகுதி - இ</span>
+            <span class="sec-title">கணிதம் (Aptitude)</span>
+            <span class="sec-badge-count" id="badgeCountAptitude">0/4</span>
+          </button>
+        </div>
+        <div class="cbt-sec-meta">
+          <span class="sec-timer">⏳ பகுதி நேரம்: <strong id="cbtSectionTimerDisplay">00:00</strong></span>
+          <button class="cbt-sound-btn" id="cbtSoundToggleBtn" onclick="toggleCbtSound()"
+            title="Toggle Bubble Shading Sound">
+            🔊 Sound: ON
+          </button>
+        </div>
+      </div>
+
+      <!-- Modal Body (Supports CBT, Split, and OMR Views) -->
+      <div class="cbt-body" id="cbtMainBody">
+        <!-- Question Pane -->
+        <div class="cbt-question-area" id="cbtQuestionArea">
+          <div class="question-top-bar">
+            <div style="display: flex; align-items: center; gap: 10px;">
+              <span class="question-id-pill" id="cbtQuestionNumber">Question 1 of 15</span>
+              <span id="cbtSubjectBadge"
+                style="font-size: 0.8rem; background: var(--bg-surface-elevated); padding: 4px 10px; border-radius: var(--radius-sm); border: 1px solid var(--border-color); font-weight: 700;">பொதுத்
+                தமிழ்</span>
+              <span id="cbtTopicBadge"
+                style="font-size: 0.78rem; background: var(--primary-subtle); color: var(--primary); padding: 4px 8px; border-radius: var(--radius-sm); font-weight: 600;">இலக்கியம்</span>
+            </div>
+            <div class="question-marks-pill">
+              Marks: <strong>+1.5</strong> | Negative: <strong>0.00</strong>
+            </div>
+          </div>
+
+          <div class="question-text-box">
+            <div class="question-text-tamil" id="cbtQuestionTamil">1. வினா இங்கே தோன்றும்...</div>
+            <div class="question-text-english" id="cbtQuestionEnglish">Question English translation will appear here...
+            </div>
+          </div>
+
+          <div class="cbt-options-list" id="cbtOptionsList">
+            <!-- Options injected by app.js -->
+          </div>
+
+          <!-- Explanation box -->
+          <div class="cbt-explanation-box" id="cbtExplanationBox"></div>
+        </div>
+
+        <!-- Authentic TNPSC OMR Sheet Simulation Pane -->
+        <div class="cbt-omr-area" id="cbtOmrArea">
+          <div class="omr-sheet-paper">
+            <div class="omr-top-seal-banner">
+              <div class="omr-seal-left">
+                <div class="omr-gov-emblem">🏛️</div>
+                <div>
+                  <div class="omr-gov-heading">TAMIL NADU PUBLIC SERVICE COMMISSION</div>
+                  <div class="omr-gov-sub">தமிழ்நாடு அரசுப் பணியாளர் தேர்வாணையம் - OMR விடைத்தாள்</div>
+                </div>
+              </div>
+              <div class="omr-barcode-box">
+                <div class="omr-barcode-lines">||| | |||| | ||||| || |||</div>
+                <div class="omr-reg-text">REG NO: <strong>2401089274</strong> | SERIES: <strong>[ A ]</strong></div>
+              </div>
+            </div>
+
+            <div class="omr-instruction-strip">
+              <span>✍️ <strong>TNPSC விடைத்தாள் அறிவுரை:</strong> கருப்பு பந்துமுனைப் பேனாவால் (Black Ballpoint Pen)
+                முழுமையாக நிழலிடவும்: <span class="bubble-demo-shaded">●</span> (✖ அல்லது ✔ செய்யக்கூடாது). விடை
+                தெரியவில்லை எனில் <strong>(E)</strong> வட்டத்தை நிழலிடவும்.</span>
+            </div>
+
+            <!-- OMR Columns Grid -->
+            <div class="omr-sections-container" id="omrSectionsContainer">
+              <!-- Dynamically populated by app.js -->
+            </div>
+
+            <!-- TNPSC Mandatory Part IV Bottom Summary Box -->
+            <div class="omr-summary-box">
+              <div class="omr-summary-title">
+                <strong>PART IV - SUMMARY OF SHADED BUBBLES (நிழலிடப்பட்ட வட்டங்களின் சுருக்க விவரம்)</strong>
+                <span style="font-size: 0.76rem; color: #b91c1c;">(விண்ணப்பதாரர் சரிபார்ப்பு கட்டாயம்)</span>
+              </div>
+              <table class="omr-summary-table">
+                <thead>
+                  <tr>
+                    <th>(A) Count</th>
+                    <th>(B) Count</th>
+                    <th>(C) Count</th>
+                    <th>(D) Count</th>
+                    <th>(E) Count</th>
+                    <th>Total Shaded</th>
+                    <th>Audit Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td id="omrCountA">0</td>
+                    <td id="omrCountB">0</td>
+                    <td id="omrCountC">0</td>
+                    <td id="omrCountD">0</td>
+                    <td id="omrCountE">0</td>
+                    <td id="omrTotalShaded" style="font-weight: 800;">0 / 15</td>
+                    <td id="omrVerificationStatus" class="status-warning">⚠️ Incomplete</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- Question Palette Pane -->
+        <div class="cbt-sidebar" id="cbtSidebarArea">
+          <div class="sidebar-header">
+            <h4>Question Palette</h4>
+            <div class="palette-legend">
+              <div class="legend-item"><span class="legend-dot answered"></span><span>Answered</span></div>
+              <div class="legend-item"><span class="legend-dot unanswered"></span><span>Unanswered</span></div>
+              <div class="legend-item"><span class="legend-dot review"></span><span>Marked Review</span></div>
+              <div class="legend-item"><span class="legend-dot notvisited"></span><span>Not Visited</span></div>
+            </div>
+          </div>
+
+          <div class="palette-grid-wrap">
+            <div class="palette-grid" id="cbtPaletteGrid">
+              <!-- Palette buttons injected by app.js -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="cbt-footer">
+        <div class="footer-left-btns">
+          <button class="btn-cbt" onclick="prevQuestion()">⬅️ Previous</button>
+          <button class="btn-cbt primary" onclick="nextQuestion()">Save & Next ➡️</button>
+          <button class="btn-cbt review" onclick="markForReview()">⭐ Mark for Review</button>
+          <button class="btn-cbt" onclick="clearCurrentResponse()">Clear Response</button>
+        </div>
+
+        <div class="footer-right-btns">
+          <span class="cbt-shaded-counter" id="cbtFooterCounter">Shaded: 0 / 15</span>
+          <button class="btn-cbt submit" onclick="submitCbtExam()">✅ Submit Test</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================
+       DETAILED SCORECARD & ANALYTICS MODAL
+       ========================================================== -->
+  <div class="modal-overlay" id="cbtResultModal">
+    <div class="modal-card modal-card-lg">
+      <button class="modal-close-btn" onclick="closeResultModal()" title="Close">✕</button>
+
+      <!-- Scorecard Header -->
+      <div class="scorecard-header-banner">
+        <div class="scorecard-title-group">
+          <span class="scorecard-tag">TNPSC Group IV & VAO 2026</span>
+          <h3 class="scorecard-heading">தேர்வு மதிப்பீட்டு அறிக்கை & தேர்வு வாய்ப்பு (Detailed Performance Report)</h3>
+          <p class="scorecard-paper-name" id="resPaperTitle">Official Model Exam 2024</p>
+        </div>
+        <div class="scorecard-main-score-badge">
+          <span class="score-large" id="resScore">0.00</span>
+          <span class="score-sub" id="resMaxScore">/ 300 Marks</span>
+        </div>
+      </div>
+
+      <!-- Qualification & State Rank Gauge -->
+      <div class="rank-projection-card">
+        <div class="rank-stat">
+          <div class="rank-lbl">மாநில உத்தேசத் தரம் (Est. State Rank)</div>
+          <div class="rank-val" id="resStateRank">Top 5% (Rank 180 - 450)</div>
+        </div>
+        <div class="rank-divider"></div>
+        <div class="rank-stat">
+          <div class="rank-lbl">சதவீதம் (Percentile)</div>
+          <div class="rank-val" id="resPercentile">96.8%</div>
+        </div>
+        <div class="rank-divider"></div>
+        <div class="rank-stat">
+          <div class="rank-lbl">பணித் தகுதி வாய்ப்பு (Post Eligibility)</div>
+          <div class="qual-badge-pill" id="resPostEligibility">🏆 VAO / Junior Assistant Qualified</div>
+        </div>
+      </div>
+
+      <!-- Performance Stats Grid -->
+      <div class="result-stats-grid">
+        <div class="result-stat-box">
+          <div class="result-stat-val" id="resTotalQuestions">15</div>
+          <div class="result-stat-lbl">Total Questions</div>
+        </div>
+        <div class="result-stat-box">
+          <div class="result-stat-val" id="resAttempted" style="color: var(--primary);">0</div>
+          <div class="result-stat-lbl">Attempted</div>
+        </div>
+        <div class="result-stat-box">
+          <div class="result-stat-val" id="resCorrect" style="color: var(--emerald);">0</div>
+          <div class="result-stat-lbl">Correct (+1.5 Marks)</div>
+        </div>
+        <div class="result-stat-box">
+          <div class="result-stat-val" id="resWrong" style="color: var(--crimson);">0</div>
+          <div class="result-stat-lbl">Wrong (0 Negative)</div>
+        </div>
+        <div class="result-stat-box">
+          <div class="result-stat-val" id="resAccuracy" style="color: var(--accent-gold-hover);">0%</div>
+          <div class="result-stat-lbl">Accuracy Rate</div>
+        </div>
+      </div>
+
+      <!-- Section-Wise Breakdown Table -->
+      <div class="analytics-card-section">
+        <h4 class="analytics-sec-title">📋 பகுதிவாரியான மதிப்பெண் பகுப்பாய்வு (Section-Wise Analytics)</h4>
+        <div class="sec-analytics-table-wrap">
+          <table class="sec-analytics-table">
+            <thead>
+              <tr>
+                <th>தேர்வுப் பகுதி (Section)</th>
+                <th>வினாக்கள் (Questions)</th>
+                <th>விடையளித்தவை (Attempted)</th>
+                <th>சரியானவை (Correct)</th>
+                <th>தவறானவை (Wrong)</th>
+                <th>மதிப்பெண் (Marks)</th>
+                <th>துல்லியம் (Accuracy)</th>
+              </tr>
+            </thead>
+            <tbody id="secAnalyticsTableBody">
+              <!-- Injected by app.js -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Topic Mastery Matrix -->
+      <div class="analytics-card-section">
+        <h4 class="analytics-sec-title">🧠 பாடத்தலைப்பு வலிமைப் பகுப்பாய்வு (Topic Mastery Matrix)</h4>
+        <div class="topic-bars-grid" id="topicMasteryContainer">
+          <!-- Injected by app.js -->
+        </div>
+      </div>
+
+      <!-- OMR Shading Verification Audit Strip -->
+      <div class="omr-audit-strip" id="omrAuditStrip">
+        <div class="omr-audit-icon">✍️</div>
+        <div class="omr-audit-info">
+          <strong>OMR Shading Audit:</strong>
+          <span id="omrAuditDetails">A: 0 | B: 0 | C: 0 | D: 0 | E: 0 — All shaded</span>
+        </div>
+        <div class="omr-audit-badge verified" id="omrAuditBadge">✓ Verified</div>
+      </div>
+
+      <!-- Question Review Section with Filter -->
+      <div class="analytics-card-section">
+        <div class="review-header-row">
+          <h4 class="analytics-sec-title" style="margin-bottom: 0;">🔍 வினாக்கள் & விடைகள் மீள்பார்வை (Question Review &
+            Explanations)</h4>
+          <div class="review-filter-bar">
+            <button class="review-filter-btn active" data-filter="all" onclick="filterReviewQuestions('all')">All (<span
+                id="revCountAll">0</span>)</button>
+            <button class="review-filter-btn wrong" data-filter="wrong" onclick="filterReviewQuestions('wrong')">Wrong
+              (<span id="revCountWrong">0</span>)</button>
+            <button class="review-filter-btn correct" data-filter="correct"
+              onclick="filterReviewQuestions('correct')">Correct (<span id="revCountCorrect">0</span>)</button>
+            <button class="review-filter-btn skipped" data-filter="skipped"
+              onclick="filterReviewQuestions('skipped')">Unattempted (<span id="revCountSkipped">0</span>)</button>
+            <button class="review-filter-btn review-mark" data-filter="review"
+              onclick="filterReviewQuestions('review')">Marked (<span id="revCountReview">0</span>)</button>
+          </div>
+        </div>
+
+        <div class="review-cards-list" id="reviewCardsList">
+          <!-- Rendered via app.js -->
+        </div>
+      </div>
+
+      <!-- Modal Action Buttons -->
+      <div class="result-actions-footer">
+        <button class="btn btn-secondary" onclick="printDetailedScorecard()">
+          <span>🖨️</span>
+          <span>Print Scorecard / PDF</span>
+        </button>
+        <button class="btn btn-gold" onclick="retakeExamInOmr()">
+          <span>🔁</span>
+          <span>Retake in OMR Mode</span>
+        </button>
+        <button class="btn btn-primary" onclick="closeResultModal()">
+          <span>✓</span>
+          <span>Done Reviewing</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================
+       ENROLLMENT / ADMISSION MODAL
+       ========================================================== -->
+  <div class="modal-overlay" id="enrollModal">
+    <div class="modal-card">
+      <button class="modal-close-btn" onclick="closeEnrollModal()">✕</button>
+      <h3 style="font-size: 1.35rem; font-weight: 800; margin-bottom: 6px;">🎓 பயிற்சி சேர்க்கை விண்ணப்பம்</h3>
+      <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 20px;">
+        Fill out this quick form to reserve your free demo class seat and receive study notes on WhatsApp.
+      </p>
+
+      <form onsubmit="handleEnrollSubmit(event)">
+        <div class="form-group">
+          <label class="form-label">முழுப் பெயர் (Full Name):</label>
+          <input type="text" class="form-input" required placeholder="உங்கள் பெயர்">
+        </div>
+        <div class="form-group">
+          <label class="form-label">அலைபேசி எண் (WhatsApp Mobile No):</label>
+          <input type="tel" class="form-input" required placeholder="10-digit mobile number">
+        </div>
+        <div class="form-group">
+          <label class="form-label">மாவட்டம் (District in Tamil Nadu):</label>
+          <input type="text" class="form-input" required placeholder="எ.கா: சென்னை, மதுரை, திருச்சி, சேலம்">
+        </div>
+        <div class="form-group">
+          <label class="form-label">விரும்பும் பயிற்சி முறை (Preferred Mode):</label>
+          <select class="form-select">
+            <option>நேரடி வகுப்பறைப் பயிற்சி (Direct Classroom - Chennai)</option>
+            <option>நேரலை ஆன்லைன் பயிற்சி (Live Interactive Online)</option>
+            <option>வார இறுதி வகுப்புகள் (Weekend Batch)</option>
+            <option>50 மாதிரித் தேர்வுத் தொடர் மட்டும் (Test Series Only)</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px;">
+          சேர்க்கை முன்பதிவு செய்க (Submit Registration)
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Global Toast Notification -->
+  <div class="toast-notice" id="globalToast">
+    Notice message
+  </div>
+
+  <!-- Scripts -->
+  <script src="data/pyqData.js"></script>
+  <script src="js/app.js"></script>
+
+  <script>
+    function toggleMobileMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      if (navLinks.style.display === 'flex') {
+        navLinks.style.display = 'none';
+      } else {
+        navLinks.style.display = 'flex';
+        navLinks.style.flexDirection = 'column';
+        navLinks.style.position = 'absolute';
+        navLinks.style.top = '100%';
+        navLinks.style.left = '0';
+        navLinks.style.right = '0';
+        navLinks.style.background = 'var(--bg-surface)';
+        navLinks.style.padding = '20px';
+        navLinks.style.boxShadow = 'var(--glass-shadow)';
+      }
+    }
+  </script>
+</body>
+
+</html>
